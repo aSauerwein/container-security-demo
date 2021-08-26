@@ -14,7 +14,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            ghcr.io/asauerwein/container-security-demo
+            asauerwein/container-security-demo
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -25,9 +25,8 @@ jobs:
       - name: Login to ghcr
         uses: docker/login-action@v1
         with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ github.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
