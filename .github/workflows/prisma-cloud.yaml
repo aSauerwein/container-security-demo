@@ -1,12 +1,12 @@
-name: vuln scanning
+name: prisma cloud scanning
 on:
   push:
     branches:
       - master
   pull_request:
 jobs:
-  build:
-    name: Build
+  prisma-cloud:
+    name: prisma cloud scanning
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout code
