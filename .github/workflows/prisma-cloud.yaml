@@ -1,4 +1,4 @@
-name: build
+name: vuln scanning
 on:
   push:
     branches:
