@@ -10,6 +10,10 @@ kubectl exec -it multitool-74477484b8-ndg6h -- /bin/sh
 kubectl delete multitool
 kubectl delete pod -l app=multitool
 ```
+### create rules for testing 
+### prevent 443
+### block wget
+
 ### container security demo
 ```
 kubectl create namespace devops-demo
