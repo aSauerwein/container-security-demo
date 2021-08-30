@@ -7,7 +7,7 @@ kubectl get pod -n devops-free
 
 kubectl exec -it multitool-74477484b8-ndg6h -- /bin/sh
 
-
+kubectl delete multitool
 kubectl delete pod -l app=multitool
 ```
 ### container security demo
