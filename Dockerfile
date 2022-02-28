@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM ubuntu:18.04
 LABEL org.opencontainers.image.authors="andreas@sauerwein.se"
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev build-essential
